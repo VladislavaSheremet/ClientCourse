@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="803.0" style="-fx-background-color: #8B0000; -fx-border-radius: 20px 20px 20px 20px;" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ShopsController">
+    <children>
+        <Label layoutX="129.0" prefHeight="95.0" prefWidth="382.0" text="ВЫ НАЙДЕТЕ НАС ЗДЕСЬ" textFill="WHITE">
+            <font>
+                <Font name="Curlz MT" size="32.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="67.0" fitWidth="74.0" layoutX="37.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/shopping-cart.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="backwards" layoutX="34.0" layoutY="460.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #FFFFE0;" text="Назад" textFill="#860404">
+            <font>
+                <Font name="Arial Bold Italic" size="14.0" />
+            </font>
+        </Button>
+      <ImageView fitHeight="67.0" fitWidth="82.0" layoutX="53.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/location.png" />
+         </image>
+      </ImageView>
+      <Text fill="#fcfcfc" layoutX="132.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Адрес:  ул. Петруся Бровки 6&#10;&#10;Время работы: &#10;     Пн-Пт: 9:00 - 18:00&#10;     Сб-Вс: 9:00 - 22:00&#10;        " wrappingWidth="259.13671875">
+         <font>
+            <Font name="Arial Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="67.0" fitWidth="82.0" layoutX="431.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/location.png" />
+         </image>
+      </ImageView>
+      <Text fill="#fcfcfc" layoutX="510.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Адрес:  ул. Гикало 9&#10;&#10;Время работы: &#10;     Пн-Пт: 10:00 - 18:00&#10;     Сб-Вс: 10:00 - 21:00&#10;        " wrappingWidth="259.13671875">
+         <font>
+            <Font name="Arial Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="67.0" fitWidth="82.0" layoutX="53.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/location.png" />
+         </image>
+      </ImageView>
+      <Text fill="#fcfcfc" layoutX="132.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Адрес:  ул. Якуба Коласа 28&#10;&#10;Время работы: &#10;     Пн-Пт: 9:00 - 18:00&#10;     Сб-Вс: 10:00 - 21:00&#10;        " wrappingWidth="259.13671875">
+         <font>
+            <Font name="Arial Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="67.0" fitWidth="82.0" layoutX="431.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/location.png" />
+         </image>
+      </ImageView>
+      <Text fill="#fcfcfc" layoutX="510.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Адрес:  ул. Козлова 28&#10;&#10;Время работы: &#10;     Пн-Пт: 9:00 - 19:00&#10;     Сб-Вс: 9:00 - 21:00&#10;        " wrappingWidth="259.13671875">
+         <font>
+            <Font name="Arial Bold Italic" size="17.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

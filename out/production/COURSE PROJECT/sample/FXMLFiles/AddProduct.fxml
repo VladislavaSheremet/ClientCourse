@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="803.0" style="-fx-background-color: #8B0000;" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.AddNewProductController">
+    <children>
+        <AnchorPane layoutY="96.0" prefHeight="404.0" prefWidth="803.0" style="-fx-background-color: #FFFFE0;">
+            <children>
+                <Label layoutX="30.0" layoutY="255.0" prefHeight="25.0" prefWidth="227.0" text="Краткое описание товара:" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Button fx:id="backwards" layoutX="29.0" layoutY="358.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #8B0000;" text="Назад" textFill="#fffefe">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <Label layoutX="104.0" layoutY="2.0" prefHeight="25.0" prefWidth="103.0" text="КАТЕГОРИЯ" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="16.0" />
+                    </font>
+                </Label>
+                <RadioButton fx:id="radio1" layoutX="32.0" layoutY="38.0" mnemonicParsing="false" text="Столы и стулья" textFill="#800000">
+                    <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                    </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleGroup1" />
+               </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="radio3" layoutX="32.0" layoutY="65.0" mnemonicParsing="false" text="Тумбы и комоды" textFill="#800000" toggleGroup="$toggleGroup1">
+                    <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="radio5" layoutX="32.0" layoutY="90.0" mnemonicParsing="false" text="Офисная мебель" textFill="#800000" toggleGroup="$toggleGroup1">
+                    <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="radio7" layoutX="32.0" layoutY="116.0" mnemonicParsing="false" text="Гостинные" textFill="#800000" toggleGroup="$toggleGroup1">
+                    <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="radio2" layoutX="196.0" layoutY="38.0" mnemonicParsing="false" text="Мягкая мебель" textFill="#800000" toggleGroup="$toggleGroup1">
+                    <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="radio4" layoutX="196.0" layoutY="65.0" mnemonicParsing="false" text="Кухни" textFill="#800000" toggleGroup="$toggleGroup1">
+                    <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="radio6" layoutX="196.0" layoutY="90.0" mnemonicParsing="false" text="Шкафы" textFill="#800000" toggleGroup="$toggleGroup1">
+                    <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="radio8" layoutX="197.0" layoutY="114.0" mnemonicParsing="false" text="Другое" textFill="#800000" toggleGroup="$toggleGroup1">
+                    <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                    </font>
+                </RadioButton>
+                <Label layoutX="31.0" layoutY="191.0" prefHeight="25.0" prefWidth="220.0" text="Наименование товара:" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="366.0" layoutY="29.0" prefHeight="25.0" prefWidth="103.0" text="Материал:" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="574.0" layoutY="87.0" prefHeight="25.0" prefWidth="57.0" text="Цвет:" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="574.0" layoutY="29.0" prefHeight="25.0" prefWidth="203.0" text="Страна производитель:" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="574.0" layoutY="147.0" prefHeight="25.0" prefWidth="178.0" text="Доп. характеристики:" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="363.0" layoutY="88.0" prefHeight="25.0" prefWidth="135.0" text="Стоимость ($):" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="305.0" layoutY="241.0" prefHeight="40.0" prefWidth="203.0" text="Себестоимость единицы&#10; продукции ($):" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="554.0" layoutY="249.0" prefHeight="25.0" prefWidth="203.0" text="Комерческие расходы ($):" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="414.0" layoutY="313.0" prefHeight="25.0" prefWidth="227.0" text="Управленческие расходы ($):" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="110.0" layoutY="158.0" prefHeight="25.0" prefWidth="67.0" text="ТОВАР" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="477.0" layoutY="2.0" prefHeight="25.0" prefWidth="162.0" text="ХАРАКТЕРИСТИКИ" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="412.0" layoutY="213.0" prefHeight="25.0" prefWidth="243.0" text="ИНФОРМАЦИЯ ДЛЯ АНАЛИЗА" textFill="#7c0202">
+                    <font>
+                        <Font name="Arial Bold Italic" size="16.0" />
+                    </font>
+                </Label>
+                <Button fx:id="finishhh" layoutX="663.0" layoutY="347.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="123.0" style="-fx-background-color: #8B0000;" text="ГОТОВО" textFill="#fffefe">
+                    <font>
+                        <Font name="Arial Bold Italic" size="17.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="signUp_ProductName" layoutX="29.0" layoutY="217.0" prefHeight="31.0" prefWidth="220.0" promptText="Наименование" />
+                <TextField fx:id="signUp_ProductDescription" layoutX="29.0" layoutY="281.0" prefHeight="31.0" prefWidth="220.0" promptText="Краткое описание" />
+                <TextField fx:id="signUp_Material" layoutX="363.0" layoutY="55.0" prefHeight="31.0" prefWidth="188.0" promptText="Материал" />
+                <TextField fx:id="signUp_Country" layoutX="574.0" layoutY="55.0" prefHeight="31.0" prefWidth="188.0" promptText="Страна производитель" />
+                <TextField fx:id="signUp_Color" layoutX="574.0" layoutY="113.0" prefHeight="31.0" prefWidth="188.0" promptText="Цвет" />
+                <TextField fx:id="signUp_Price" layoutX="365.0" layoutY="113.0" prefHeight="31.0" prefWidth="188.0" promptText="Стоимость" />
+                <TextField fx:id="signUp_Information" layoutX="574.0" layoutY="173.0" prefHeight="31.0" prefWidth="188.0" promptText="Дополнительно" />
+                <TextField fx:id="signUp_grassProfit" layoutX="305.0" layoutY="281.0" prefHeight="31.0" prefWidth="203.0" promptText="Себестоимость " />
+                <TextField fx:id="signUp_sellingExpenses" layoutX="552.0" layoutY="281.0" prefHeight="31.0" prefWidth="203.0" promptText="Комерчески расходы" />
+                <TextField fx:id="signUp_managementExpenses" layoutX="418.0" layoutY="340.0" prefHeight="31.0" prefWidth="220.0" promptText="Управленческие расходы" />
+            <Label layoutX="365.0" layoutY="148.0" prefHeight="25.0" prefWidth="178.0" text="Кол-во единиц товара:" textFill="#7c0202">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="signUp_KlSkld" layoutX="365.0" layoutY="174.0" prefHeight="31.0" prefWidth="188.0" promptText="Количество" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="122.0" layoutY="1.0" prefHeight="95.0" prefWidth="280.0" text="НОВЫЙ ТОВАР" textFill="WHITE">
+            <font>
+                <Font name="Curlz MT" size="32.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="78.0" fitWidth="87.0" layoutX="37.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/new-file.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="803.0" style="-fx-background-color: #8B0000; -fx-border-radius: 20px 20px 20px 20px;" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ReductController">
+    <children>
+        <RadioButton fx:id="RadioMaterial" layoutX="208.0" layoutY="307.0" mnemonicParsing="false" text="Материал" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold Italic" size="15.0" />
+            </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="sortnggg1" />
+         </toggleGroup>
+        </RadioButton>
+        <Label layoutX="120.0" prefHeight="95.0" prefWidth="279.0" text="РЕДАКТИРОВАНИЕ" textFill="WHITE">
+            <font>
+                <Font name="Curlz MT" size="32.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="67.0" fitWidth="74.0" layoutX="37.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/new-file.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="backwards" layoutX="34.0" layoutY="460.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #FFFFE0;" text="Назад" textFill="#860404">
+            <font>
+                <Font name="Arial Bold Italic" size="14.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tableProfit" layoutX="8.0" layoutY="90.0" prefHeight="180.0" prefWidth="786.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="40.0" text="№" />
+                <TableColumn fx:id="categoryColumn" prefWidth="100.0" text="Категория" />
+                <TableColumn fx:id="nameColumn" prefWidth="100.0" text="Наименование" />
+                <TableColumn fx:id="definitionColumn" prefWidth="120.0" text="Краткое описание" />
+                <TableColumn fx:id="materialColumn" prefWidth="80.0" text="Материал" />
+                <TableColumn fx:id="colorColumn" prefWidth="60.0" text="Цвет" />
+                <TableColumn fx:id="countryColumn" prefWidth="60.0" text="Страна" />
+                <TableColumn fx:id="priceColumn" prefWidth="60.0" text="Цена($)" />
+                <TableColumn fx:id="klSkladColumn" prefWidth="75.0" text="Кол-во на складе" />
+                <TableColumn fx:id="klBuyColumn" prefWidth="75.0" text="Кол-во проданной пр-ии" />
+                <TableColumn fx:id="grossColumn" prefWidth="75.0" text="Себ-сть за ед.($)" />
+                <TableColumn fx:id="sellingColumn" prefWidth="75.0" text="Комер-е з.($)" />
+                <TableColumn fx:id="managementColumn" prefWidth="75.0" text="Управ-е з.($)" />
+            </columns>
+        </TableView>
+        <Button fx:id="ButtonReduct" layoutX="313.0" layoutY="444.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="247.0" style="-fx-background-color: #FFFFE0;" text="Редактировать" textFill="#860404">
+            <font>
+                <Font name="Arial Bold Italic" size="22.0" />
+            </font>
+        </Button>
+        <RadioButton fx:id="RadioName" layoutX="20.0" layoutY="339.0" mnemonicParsing="false" text="Наименование" textFill="WHITE" toggleGroup="$sortnggg1">
+            <font>
+                <Font name="Arial Bold Italic" size="15.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="RadioDefinition" layoutX="20.0" layoutY="373.0" mnemonicParsing="false" text="Краткое описание" textFill="WHITE" toggleGroup="$sortnggg1">
+            <font>
+                <Font name="Arial Bold Italic" size="15.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="RadioColor" layoutX="208.0" layoutY="341.0" mnemonicParsing="false" text="Цвет" textFill="WHITE" toggleGroup="$sortnggg1">
+            <font>
+                <Font name="Arial Bold Italic" size="15.0" />
+            </font>
+        </RadioButton>
+        <TextField fx:id="Znachen" layoutX="344.0" layoutY="408.0" prefHeight="25.0" prefWidth="247.0" />
+        <Text fill="WHITE" layoutX="237.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Значение:">
+            <font>
+                <Font name="Arial Bold Italic" size="19.0" />
+            </font>
+        </Text>
+        <RadioButton fx:id="RadioCountry" layoutX="208.0" layoutY="372.0" mnemonicParsing="false" text="Страна" textFill="WHITE" toggleGroup="$sortnggg1">
+            <font>
+                <Font name="Arial Bold Italic" size="15.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="RadioPrice" layoutX="347.0" layoutY="305.0" mnemonicParsing="false" text="Цена" textFill="WHITE" toggleGroup="$sortnggg1">
+            <font>
+                <Font name="Arial Bold Italic" size="15.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="RadioKlSklad" layoutX="347.0" layoutY="332.0" mnemonicParsing="false" text="Количество продукции &#10;на складе" textFill="WHITE" toggleGroup="$sortnggg1">
+            <font>
+                <Font name="Arial Bold Italic" size="14.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="RadioKlProd" layoutX="347.0" layoutY="364.0" mnemonicParsing="false" text="Количество проданной&#10;продукции" textFill="WHITE" toggleGroup="$sortnggg1">
+            <font>
+                <Font name="Arial Bold Italic" size="14.0" />
+            </font>
+        </RadioButton>
+      <RadioButton fx:id="RadioCategory" layoutX="20.0" layoutY="308.0" mnemonicParsing="false" text="Категория" textFill="WHITE" toggleGroup="$sortnggg1">
+         <font>
+            <Font name="Arial Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RadioGross" layoutX="560.0" layoutY="305.0" mnemonicParsing="false" text="Себестоимостьединицы&#10; продукции" textFill="WHITE" toggleGroup="$sortnggg1">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RadioManagement" layoutX="560.0" layoutY="377.0" mnemonicParsing="false" text="Управленческие затраты" textFill="WHITE" toggleGroup="$sortnggg1">
+         <font>
+            <Font name="Arial Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RadioSelling" layoutX="560.0" layoutY="343.0" mnemonicParsing="false" text="Коммерческие затраты" textFill="WHITE" toggleGroup="$sortnggg1">
+         <font>
+            <Font name="Arial Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="ButtonUpdate" layoutX="633.0" layoutY="274.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="161.0" style="-fx-background-color: #FFFFE0;" text="Обновить" textFill="#860404">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

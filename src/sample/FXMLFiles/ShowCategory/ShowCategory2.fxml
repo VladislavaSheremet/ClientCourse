@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="803.0" style="-fx-background-color: #8B0000; -fx-border-radius: 20px 20px 20px 20px;" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ShowCategory.ShowCategory2Controller">
+    <children>
+        <Label layoutX="115.0" prefHeight="95.0" prefWidth="705.0" text="ТОВАРЫ КАТЕГОРИИ &quot;МЯГКАЯ МЕБЕЛЬ&quot;" textFill="WHITE">
+            <font>
+                <Font name="Curlz MT" size="29.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="67.0" fitWidth="74.0" layoutX="37.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/view.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="backwards" layoutX="34.0" layoutY="460.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #FFFFE0;" text="Назад" textFill="#860404">
+            <font>
+                <Font name="Arial Bold Italic" size="14.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tableProfit" layoutX="8.0" layoutY="87.0" prefHeight="331.0" prefWidth="786.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="40.0" text="№" />
+                <TableColumn fx:id="nameColumn" prefWidth="100.0" text="Наименование" />
+                <TableColumn fx:id="definitionColumn" prefWidth="120.0" text="Краткое описание" />
+                <TableColumn fx:id="materialColumn" prefWidth="80.0" text="Материал" />
+                <TableColumn fx:id="colorColumn" prefWidth="60.0" text="Цвет" />
+                <TableColumn fx:id="countryColumn" prefWidth="60.0" text="Страна" />
+                <TableColumn fx:id="priceColumn" prefWidth="60.0" text="Цена($)" />
+                <TableColumn fx:id="klSkladColumn" prefWidth="75.0" text="Кол-во на складе" />
+                <TableColumn fx:id="klBuyColumn" prefWidth="75.0" text="Кол-во проданной пр-ии" />
+                <TableColumn fx:id="grossColumn" prefWidth="75.0" text="Себестоимость за ед.($)" />
+                <TableColumn fx:id="sellingColumn" prefWidth="105.0" text="Комер-е затраты ($)" />
+                <TableColumn fx:id="managementColumn" prefWidth="85.0" text="Управ-е затраты ($)" />
+            </columns>
+        </TableView>
+        <Button fx:id="ButtonUpdate" layoutX="272.0" layoutY="430.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="259.0" style="-fx-background-color: #FFFFE0;" text="Обновить" textFill="#860404">
+            <font>
+                <Font name="Arial Bold Italic" size="24.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="67.0" fitWidth="84.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/armchair%20(1).png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
